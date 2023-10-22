@@ -2,13 +2,18 @@
 
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
 import { useTheme } from "next-themes"
+import { Button } from "@/components/ui/button"
 
 export function DarkModeToggle() {
     const { theme, setTheme } = useTheme();
 
     return (
-        <div className={""}>
-            {theme === "dark" ? (<MoonIcon className={"w-8 h-8"} />) : (<SunIcon className={"w-8 h-8"} />)}
-        </div>
+        <>
+            <Button variant={"ghost"} size={"icon"}
+                    className={"transition-none hover:border dark:hover:border-slate-700"}
+                onClick={() => setTheme( theme == "dark" ? "light" : "dark")}>
+                {theme === "dark" ? (<MoonIcon className={"w-6 h-6"} />) : (<SunIcon className={"w-6 h-6"} />)}
+            </Button>
+        </>
     )
 }

@@ -2,9 +2,9 @@ import {DarkModeToggle} from "@/components/darkModeToggle";
 
 export default function Home() {
     return (
-        <main className="flex flex-col justify-center h-screen bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200">
-            <div>
-                <DarkModeToggle  />
+        <main className="flex flex-col justify-center h-screen bg-stone-100 dark:bg-slate-800 text-stone-900 dark:text-stone-200">
+            <div className={"absolute top-8 left-8"}>
+                <DarkModeToggle />
             </div>
             <div className={"flex flex-col gap-4 justify-center items-center"}>
                 <h1 className={"text-8xl font-semibold"}>Emil Hafner</h1>
