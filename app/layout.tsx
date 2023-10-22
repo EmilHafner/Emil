@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/providers/theme-provider'
+import {DarkModeToggle} from "@/components/darkModeToggle";
 
 const inter = Inter({ subsets: ['latin']})
 
@@ -23,6 +24,9 @@ export default function RootLayout({
             defaultTheme="system"
             enableSystem
         >
+          <div className={"absolute top-8 left-8"}>
+            <DarkModeToggle />
+          </div>
           {children}
         </ThemeProvider>
       </body>
