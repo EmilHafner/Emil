@@ -10,7 +10,7 @@ export function DarkModeToggle() {
     return (
         <>
             <Button variant={"ghost"} size={"icon"}
-                    className={"transition-none hover:border dark:hover:border-slate-700"}
+                    className={"transition-none hover:opacity-60"}
                 onClick={() => setTheme( theme == "dark" ? "light" : "dark")}>
                 {theme === "dark" ? (<MoonIcon className={"w-6 h-6"} />) : (<SunIcon className={"w-6 h-6"} />)}
             </Button>
