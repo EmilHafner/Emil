@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ['latin']})
 export const metadata: Metadata = {
   title: 'Emil Hafner',
   description: 'Personal website of Emil Hafner',
+  keywords: ['Emil Hafner', 'Emil', 'Hafner', 'Developer', 'Software', 'Full-Stack']
 }
 
 export default function RootLayout({
