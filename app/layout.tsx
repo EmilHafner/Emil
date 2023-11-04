@@ -9,7 +9,10 @@ const inter = Inter({ subsets: ['latin']})
 export const metadata: Metadata = {
   title: 'Emil Hafner',
   description: 'Personal website of Emil Hafner',
-  keywords: ['Emil Hafner', 'Emil', 'Hafner', 'Developer', 'Software', 'Full-Stack']
+  keywords: ['Emil Hafner', 'Emil', 'Hafner', 'Developer', 'Software', 'Full-Stack'],
+  icons: {
+    icon: '@/public/favicon.ico',
+  }
 }
 
 export default function RootLayout({
@@ -19,6 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+
       <body className={inter.className}>
         <ThemeProvider
             attribute="class"
