@@ -1,4 +1,6 @@
 
+import Link from "next/link";
+import {Button} from "@/components/ui/button";
 export default function Home() {
 
     const links: {"name": string; "url": URL}[] = [
@@ -16,13 +18,16 @@ export default function Home() {
                     </h1>
                 <p className={"text-xl font-light text-center"}>Full-Stack Software Developer</p>
             </div>
-            <div className={"flex justify-center mt-20"}>
-                <ul className={"flex flex-row gap-4 text-xl md:text-2xl"}>
+            <div className={"flex justify-center mt-5"}>
+                <ul className={"flex flex-row gap-4"}>
                     {links.map((link) => (
                         <li key={link.name}>
-                            <a href={link.url.toString()} target={"_blank"}>
-                                {link.name}
-                            </a>
+                            <Button variant={"ghost"} >
+                                <Link href={link.url.toString()} target={"_blank"}
+                                      className={"text-xl hover:underline underline-offset-2"} >
+                                    {link.name}
+                                </Link>
+                            </Button>
                         </li>
                     ))}
                 </ul>
