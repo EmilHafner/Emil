@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inconsolata as GlobalFont } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/providers/theme-provider'
 import {DarkModeToggle} from "@/components/darkModeToggle";
 
-const inter = Inter({ subsets: ['latin']})
+const inter = GlobalFont({ subsets: ['latin']})
 
 export const metadata: Metadata = {
   title: 'Emil Hafner',
