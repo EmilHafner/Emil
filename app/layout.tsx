@@ -3,6 +3,7 @@ import { Inconsolata as GlobalFont } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/providers/theme-provider'
 import {DarkModeToggle} from "@/components/darkModeToggle";
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = GlobalFont({ subsets: ['latin']})
 
@@ -34,6 +35,7 @@ export default function RootLayout({
           </div>
           {children}
         </ThemeProvider>
+      <Analytics />
       </body>
     </html>
   )
