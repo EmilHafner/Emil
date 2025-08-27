@@ -9,12 +9,11 @@ export default function Home() {
         {"name": "Contact", "url": new URL("mailto:contact@emil-hafner.com")}]
 
     return (
-        <main className="flex flex-col justify-center h-screen bg-stone-100 dark:bg-slate-800 text-stone-900 dark:text-stone-200">
+        <main className="flex flex-col justify-center h-screen bg-stone-300 dark:bg-slate-800 text-stone-900 dark:text-stone-200">
             <div className={"flex flex-col gap-4 justify-center items-center"}>
                     <h1 className={"text-6xl md:text-8xl font-semibold text-center relative"}>
-
-                        {/*<div className={"hidden lg:block w-3 rounded-sm h-full bg-rose-500 absolute -left-4"}></div>*/}
                         Emil Hafner
+                        <span class="bg-amber-700 h-[2px] w-42 block m-auto"></span>
                     </h1>
                 <p className={"text-xl font-light text-center"}>Full-Stack Software Developer</p>
             </div>

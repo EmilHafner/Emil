@@ -39,6 +39,7 @@
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
 
+  /*noinspection CssUnresolvedCustomProperty*/
   @keyframes accordion-down {
     from {
       height: 0;
@@ -47,6 +48,7 @@
       height: var(--radix-accordion-content-height);
     }
   }
+  /*noinspection CssUnresolvedCustomProperty*/
   @keyframes accordion-up {
     from {
       height: var(--radix-accordion-content-height);
