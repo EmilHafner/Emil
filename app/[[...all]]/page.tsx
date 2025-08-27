@@ -13,7 +13,7 @@ export default function Home() {
             <div className={"flex flex-col gap-4 justify-center items-center"}>
                     <h1 className={"text-6xl md:text-8xl font-semibold text-center relative"}>
                         Emil Hafner
-                        <span class="bg-amber-700 h-[2px] w-42 block m-auto"></span>
+                        <span className="bg-amber-700 h-[2px] w-42 block m-auto"></span>
                     </h1>
                 <p className={"text-xl font-light text-center"}>Full-Stack Software Developer</p>
             </div>
